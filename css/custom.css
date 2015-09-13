@@ -1,0 +1,40 @@
+h1,h2,h3 {
+  font-family: Helvetica, Verdana, sans-serif;
+  font-stretch: ultra-condensed;
+}
+
+h2 {
+  font-size: 300%;
+}
+
+h3 {
+  font-size: 200%;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.top.column {
+  text-shadow: 1px 1px 2px black;
+  background-image: url("../img/didv_blue_0.png");
+}
+
+h1 {
+  color: white;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .top.column { padding-top: 50px; }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .top.column { padding-right: 40%; }
+}
