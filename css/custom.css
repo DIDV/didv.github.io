@@ -3,17 +3,16 @@ h1,h2,h3 {
   font-stretch: ultra-condensed;
 }
 
-h2 {
-  font-size: 300%;
+h1 { color: white; }
+
+@media only screen and (min-width: 40.063em) {
+  h2 { font-size: 300%; }
+  h3 { font-size: 200%; }
+  #footer h1 { font-size: 2em; }
+  #footer h2 { font-size: 1.5em; }
 }
 
-h3 {
-  font-size: 200%;
-}
-
-h4 {
-  text-transform: uppercase;
-}
+h4 { text-transform: uppercase; }
 
 img.center {
   display: block;
@@ -21,18 +20,48 @@ img.center {
   margin-right: auto;
 }
 
+img.logo {
+  padding: 1px 5px 0 0;
+  vertical-align: text-top;
+}
+
+#footer { background-color: #333; }
+#footer ul { list-style: none; }
+#footer ul li { padding-top: 10px; }
+
+@media only screen and (max-width: 40em) {
+  #footer { text-align: center; }
+  #footer ul {
+    border-top: 1px solid #666;
+    padding-top: 1em;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  #footer { padding-bottom: 40px; }
+  #footer .large-3.column {
+    border-left: 1px solid #222;
+  }
+}
+
+#footer a {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#footer,
+#footer h1,
+#footer h2,
+#footer a {
+  color: #6c6c6c;
+}
+
+#footer ul li a:hover { color: #7c7c7c; }
 
 .top.column {
   text-shadow: 1px 1px 2px black;
   background-image: url("../img/didv_blue_0.png");
-}
-
-h1 {
-  color: white;
-}
-
-@media only screen and (min-width: 40.063em) {
-  .top.column { padding-top: 50px; }
+  padding-top: 50px;
 }
 
 @media only screen and (min-width: 64.063em) {
