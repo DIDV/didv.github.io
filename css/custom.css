@@ -1,5 +1,5 @@
 h1,h2,h3 {
-  font-family: Helvetica, Verdana, sans-serif;
+  font-family: 'Fjalla One', Helvetica, Verdana, sans-serif;
   font-stretch: ultra-condensed;
 }
 
@@ -12,7 +12,15 @@ h1 { color: white; }
   #footer h2 { font-size: 1.5em; }
 }
 
-h4 { text-transform: uppercase; }
+h4 {
+  font-family: 'Fjalla One', Helvetica, Verdana, sans-serif;
+  color: #337F7F;
+  text-transform: uppercase;
+}
+
+p strong {
+  font-family: 'Nunito', sans-serif;
+}
 
 img.center {
   display: block;
@@ -21,9 +29,31 @@ img.center {
 }
 
 img.logo {
-  padding: 1px 5px 0 0;
+  padding: 4px 5px 0 0;
   vertical-align: text-top;
 }
+
+.contain-to-grid,
+.top-bar,
+.top-bar-section .right li a,
+.top-bar-section .right li a:hover {
+  font-family: 'Nunito', sans-serif;
+  background: #DDDDDD;
+  color: #333;
+}
+
+.top-bar-section .right li a:hover {
+  background: #D3D3D3;
+  color: #337F7F;
+}
+
+.top-bar .name h1 a {
+  font-stretch: condensed;
+  font-size: 1.1em;
+  font-family: 'Nunito', sans-serif;
+  color: #337F7F;
+}
+
 
 #footer { background-color: #333; }
 #footer ul { list-style: none; }
@@ -38,6 +68,13 @@ img.logo {
 }
 
 @media only screen and (min-width: 40.063em) {
+  img.logo {
+    padding: 9px 5px 0 0;
+    vertical-align: text-top;
+  }
+  .top-bar .name h1 a {
+    font-size: 1.5em
+  }
   #footer { padding-bottom: 40px; }
   #footer .large-3.column {
     border-left: 1px solid #222;
@@ -53,6 +90,7 @@ img.logo {
 #footer h1,
 #footer h2,
 #footer a {
+  font-family: 'Nunito', sans-serif;
   color: #6c6c6c;
 }
 
