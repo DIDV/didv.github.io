@@ -131,6 +131,7 @@ img.logo {
   text-shadow: 1px 1px 2px black;
   background-image: url("../img/didv_blue_0.png");
   padding-top: 50px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 64.063em) {
