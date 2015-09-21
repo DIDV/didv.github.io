@@ -16,7 +16,7 @@
   <script src="js/vendor/custom.modernizr.js"></script>
 <body>
 	<div class="contain-to-grid sticky">
-		<nav class="top-bar" data-topbar data-options="scrolltop:false, is_hover:false" role="navigation">
+		<nav class="top-bar" data-topbar data-options="scrolltop:false; is_hover:false" role="navigation">
 		  <ul class="title-area">
 		    <li class="name">
 		      <h1><a href="#top"><img src="img/didv_logo_white_0.png" class="logo" /> DIDV</a></h1>
@@ -162,8 +162,6 @@ Consiste no desenvolvimento de um equipamento para leitura e escrita de textos a
 		</div>
 	</div>
 
-
-
   <script>
   document.write('<script src=' +
   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
@@ -175,5 +173,12 @@ Consiste no desenvolvimento de um equipamento para leitura e escrita de textos a
   <script>
     $(document).foundation();
   </script>
+
+	<script>
+	$(document).on("click", ".top-bar-section li", function () {
+	  Foundation.libs.topbar.toggle($('.top-bar'));
+  });
+	</script>
+
 </body>
 </html>
