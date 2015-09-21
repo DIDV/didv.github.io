@@ -34,35 +34,48 @@ img.logo {
 }
 
 .contain-to-grid,
+.toggle-topbar,
 .top-bar,
-.top-bar-section .right li a,
-.top-bar-section .right li a:hover {
+.top-bar .top-bar-section .right li a,
+.top-bar.expanded .title-area
+{
   font-family: 'Nunito', sans-serif;
-  background: #DDDDDD;
+  background: #FFF;
   color: #333;
 }
 
+.top-bar.expanded .top-bar-section .right li a { background-color: #DDD; }
+
+.top-bar .toggle-topbar.menu-icon a span {
+  box-shadow: 0px 10px 0px 1px #337F7F,
+              0px 16px 0px 1px #337F7F,
+              0px 22px 0px 1px #337F7F;
+}
+
 .top-bar-section .right li a:hover {
-  background: #D3D3D3;
+  background: #DDD;
   color: #337F7F;
 }
 
 .top-bar .name h1 a {
   font-stretch: condensed;
-  font-size: 1.1em;
+  font-size: 1.11em;
   font-family: 'Nunito', sans-serif;
   color: #337F7F;
 }
 
 
-#footer { background-color: #333; }
+#footer {
+  background-color: #333;
+  background: url('../img/binding_dark.png') repeat;
+}
 #footer ul { list-style: none; }
 #footer ul li { padding-top: 10px; }
 
 @media only screen and (max-width: 40em) {
   #footer { text-align: center; }
   #footer ul {
-    border-top: 1px solid #666;
+    border-top: 1px dashed #6c6c6c;
     padding-top: 1em;
   }
 }
@@ -73,11 +86,13 @@ img.logo {
     vertical-align: text-top;
   }
   .top-bar .name h1 a {
-    font-size: 1.5em
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 3px #445050;
   }
   #footer { padding-bottom: 40px; }
   #footer .large-3.column {
-    border-left: 1px solid #222;
+    border-left: 1px dashed #6c6c6c;
   }
 }
 
@@ -91,6 +106,7 @@ img.logo {
 #footer h2,
 #footer a {
   font-family: 'Nunito', sans-serif;
+  text-shadow: 1px 1px 2px black;
   color: #6c6c6c;
 }
 
