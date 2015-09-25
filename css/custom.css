@@ -12,6 +12,7 @@ h1 { color: white; }
   #footer h2 { font-size: 1.5em; }
 }
 
+.top-bar .top-bar-section .right li a,
 h4 {
   font-family: 'Fjalla One', Helvetica, Verdana, sans-serif;
   color: #337F7F;
@@ -21,7 +22,7 @@ h4 {
 .contain-to-grid,
 .toggle-topbar,
 .top-bar,
-.top-bar .top-bar-section .right li a,
+/*.top-bar .top-bar-section .right li a,*/
 .top-bar.expanded .title-area,
 p strong,
 .top-bar .name h1 a,
@@ -135,5 +136,8 @@ img.logo {
 }
 
 @media only screen and (min-width: 64.063em) {
-  .top.column { padding-right: 40%; }
+  .top.column {
+    padding-right: 40%;
+    border-radius: 5px;
+  }
 }
